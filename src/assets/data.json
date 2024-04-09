@@ -6,5 +6,7 @@
         "TEST",
         "TEST2",
         "Test#"
-    ]
-}
+    ],
+    "Demography": ["State","City","Branch"],
+    "State": ["TN","AP","KN"]
+} 
