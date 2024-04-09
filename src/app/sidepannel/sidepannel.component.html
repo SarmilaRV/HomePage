@@ -34,13 +34,13 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <div class="dropdown" *ngFor="let j of data1.Demography">
+                    <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                            aria-expanded="false" *ngFor="let j of data1.Demography">
                             {{j}}
                         </button>
-                        <ul class="dropdown-menu" *ngFor="let i of data1.State">
-                            <li><a class="dropdown-item" href="#">{{i}}</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" *ngFor="let i of data1.State" href="#">{{i}}</a></li>
                         </ul>
                     </div>
                 </div>

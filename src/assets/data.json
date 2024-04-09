@@ -8,5 +8,7 @@
         "Test#"
     ],
     "Demography": ["State","City","Branch"],
-    "State": ["TN","AP","KN"]
+    "State": ["TN","AP","KN"],
+    "City":[],
+    "Branch":[]
 } 
