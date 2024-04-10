@@ -1,0 +1,36 @@
+.container{
+    margin-left: 0%;
+}
+
+.dashboard{
+    max-width: 75%;
+    margin-left: 25%;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.img-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 40px 200px 0px;
+    width: 45%;
+}
+
+.btn{
+    border: 0.5px solid #c9c7c7f1;
+    border-radius: 100px;
+}
+
+.btn-close{
+    font-size: 10px;
+    box-shadow: none;
+}
+.dropdown{
+    margin-left: 100%;
+}
