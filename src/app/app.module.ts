@@ -5,16 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidepannelComponent } from './sidepannel/sidepannel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { FormsModule } from '@angular/forms';
+import { JsonPipe } from '@angular/common';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidepannelComponent,
-    DashboardComponent
+    DashboardComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    NgbDatepickerModule,
+    FormsModule,
+    JsonPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

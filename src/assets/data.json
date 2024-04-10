@@ -7,8 +7,8 @@
         "TEST2",
         "Test#"
     ],
-    "Demography": ["State","City","Branch"],
+    "Demography": [{"State":["TN","AP","KN"]}],
     "State": ["TN","AP","KN"],
-    "City":[],
-    "Branch":[]
+    "City":["Madurai","Namakkal","Chennai"],
+    "Branch":["Kalavasal","Perugalathur"]
 } 

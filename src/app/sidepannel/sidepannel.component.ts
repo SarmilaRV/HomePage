@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDatepicker } from "@angular/material/datepicker";
 import  data  from "../../assets/data.json";
 
 @Component({
@@ -11,3 +12,6 @@ import  data  from "../../assets/data.json";
 export class SidepannelComponent {
   data1 = data  
 }
+
+  
+console.log(data.FeedCategory);
