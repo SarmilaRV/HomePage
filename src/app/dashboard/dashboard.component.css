@@ -8,17 +8,13 @@
 }
 
 .col{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 }
 
 .img-fluid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 40px 200px 0px;
+    padding: 40px 20px;
     width: 45%;
 }
 
