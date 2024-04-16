@@ -1,6 +1,7 @@
 .sidepannel{
    margin:1%;
-   border: 0.5px solid #afadadea;
+   border: 0.5px solid #faecec;
+   border-radius: 1%;
 }
 .box{
     display: flex;
@@ -10,4 +11,28 @@
 }
 .darkbluecolor{
     color:blue;
+}
+
+.accordion-button:not(.collapsed) {
+    
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion {
+    border-color: #fff;
+    --bs-accordion-border-color: #fff;
+        
+}
+
+hr { 
+    width:90%; 
+    height:1px; 
+    margin: 5%;
+    color: #8f8d8d;
+}
+
+.btn-secondary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #fff; 
 }
