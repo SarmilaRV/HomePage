@@ -17,13 +17,13 @@
     
     background-color: #fff;
     box-shadow: none;
+    font-weight: bolder;
 }
 
 .accordion {
     border-color: #fff;
-    --bs-accordion-border-color: #fff;
-        
-}
+    --bs-accordion-border-color: #fff;       
+ }
 
 hr { 
     width:90%; 
@@ -35,4 +35,32 @@ hr {
 .btn-secondary {
     --bs-btn-color: #000;
     --bs-btn-bg: #fff; 
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-hover-bg: #fff;
+    color:#000;     
+    --bs-btn-active-bg: #fff;
+    box-shadow: 2px 2px 2px 2px #c74dc1;
+    width: 80%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #c74dc1
+
 }
+
+.dropdown-toggle::after {
+
+    margin-top:9%;
+}
+
+button:not(:disabled) {
+    font-weight: bolder;
+}
+
+.dropdown{
+    font-weight: 100;
+
+}
+.checked {
+    color: orange;
+  }

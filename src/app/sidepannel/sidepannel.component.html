@@ -1,102 +1,165 @@
-<div class="sidepannel">
-  <div class="box">
-    <h6>Filter</h6>
-    <div class="darkbluecolor">Clear all</div>
-  </div>
-  <hr/>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Feed Category
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <div class="form-check" *ngFor="let i of data1.FeedCategory">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              {{i}}
-            </label>
-          </div>
-          <div class="darkbluecolor">See More</div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="sidepannel">
+    <div class="box">
+      <h6>Filter</h6>
+      <div class="darkbluecolor">
+        Clear all
       </div>
     </div>
-  </div>
-  <hr/>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Demography
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <div class="dropdown mb-2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              State
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" *ngFor="let i of data1.State" href="#">{{i}}</a></li>
-            </ul>
-          </div>
-          <div class="dropdown mb-2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              City
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" *ngFor="let i of data1.City" href="#">{{i}}</a></li>
-            </ul>
-          </div>
-          <div class="dropdown mb-2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Branch
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" *ngFor="let i of data1.Branch" href="#">{{i}}</a></li>
-            </ul>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Feed Category
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="form-check" *ngFor="let i of data1.FeedCategory">
+              <input class="form-check-input" type="checkbox" value="" id= i>
+              <label class="form-check-label" for="flexCheckDefault">
+                {{i}}
+              </label>
+            </div>
+            <div class="darkbluecolor">See More</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <hr/>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-          aria-expanded="true" aria-controls="collapseThree">
-          Date and Time
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <app-datepicker></app-datepicker>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Demography
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="dropdown mb-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                State
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" *ngFor="let i of data1.State" href="#">{{i}}</a></li>
+              </ul>
+            </div>
+            <div class="dropdown mb-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                City
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" *ngFor="let i of data1.City" href="#">{{i}}</a></li>
+              </ul>
+            </div>
+            <div class="dropdown mb-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Branch
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" *ngFor="let i of data1.Branch" href="#">{{i}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+            aria-expanded="true" aria-controls="collapseThree">
+            Date Time
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <app-datepicker></app-datepicker>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+            aria-expanded="true" aria-controls="collapseFour">
+            Traffic
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body ">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label mt-1" for="flexCheckDefault">
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label mt-1" for="flexCheckDefault">
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label mt-1" for="flexCheckDefault">
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star notchecked pe-2"></span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label mt-1" for="flexCheckDefault">
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+              </label>
+            </div><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label mt-1" for="flexCheckDefault">
+                <span class="fa fa-star checked pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+                <span class="fa fa-star pe-2"></span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <hr/>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-          aria-expanded="true" aria-controls="collapseFour">
-          Traffic
-        </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body ">
-          See More
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</body>
+
+</html>
