@@ -1,32 +1,160 @@
-.container{
+.container {
     margin-left: 0%;
 }
 
-.dashboard{
+.dashboard {
     max-width: 75%;
     margin-left: 25%;
 }
-
-.col{
+.col_1{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    display: flex;
+    margin-right: 300px;
+}
+.col {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
 }
 
-.img-fluid{
+.img-fluid {
     padding: 40px 20px;
     width: 32%;
+    width: 300px;
 }
 
-.btn{
+.btn {
     border: 0.5px solid #c9c7c7f1;
     border-radius: 100px;
 }
 
-.btn-close{
+.btn-close {
     font-size: 10px;
     box-shadow: none;
 }
-.dropdown{
+
+.dropdown {
     margin-left: 100%;
+}
+
+.bar35 {
+    height: 30px;
+    width: 10px;
+    background-color: skyblue;
+    margin-left: 6px;
+}
+
+.bar25 {
+    height: 20px;
+    width: 10px;
+    background-color: skyblue;
+    margin-left: 6px;
+}
+
+.bar50 {
+    height: 40px;
+    width: 10px;
+    background-color: skyblue;
+    margin-left: 6px;
+}
+
+.bar75 {
+    height: 50px;
+    width: 10px;
+    background-color: skyblue;
+    margin-left: 6px;
+}
+
+.bar100 {
+    height: 60px;
+    width: 10px;
+    background-color: skyblue;
+    margin-left: 6px;
+}
+
+.graphContainer {
+    display: flex;
+    margin-left: 80px;
+    align-items: flex-end;
+    width: 185px;
+}
+
+.foot{
+    margin-left:20px;
+    font-size:smaller;
+    font-style:normal;
+}
+
+.barg35 {
+    height: 30px;
+    width: 10px;
+    background-color: pink;
+    margin-left: 6px;
+}
+
+.barg25 {
+    height: 20px;
+    width: 10px;
+    background-color: pink;
+    margin-left: 6px;
+}
+
+.barg50 {
+    height: 40px;
+    width: 10px;
+    background-color: pink;
+    margin-left: 6px;
+}
+
+.barg75 {
+    height: 50px;
+    width: 10px;
+    background-color: pink;
+    margin-left: 6px;
+}
+
+.barg100 {
+    height: 60px;
+    width: 10px;
+    background-color: pink;
+    margin-left: 6px;
+}
+
+
+.bar135 {
+    height: 30px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.bar125 {
+    height: 20px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.bar150 {
+    height: 40px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.bar175 {
+    height: 50px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.bar1100 {
+    height: 60px;
+    width: 10px;
+    background-color: #fff;
+    margin-left: 6px;
 }

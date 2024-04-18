@@ -16,7 +16,7 @@ import { JsonPipe } from '@angular/common';
     AppComponent,
     SidepannelComponent,
     DashboardComponent,
-    DatepickerComponent
+    DatepickerComponent,
   ],
   imports: [
     BrowserModule,
